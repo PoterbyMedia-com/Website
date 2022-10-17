@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-family: 'Inter', sans-serif;
+}
+section {
+  margin: 100px 5px;
+}
+
+header {
+  width: 100%;
+  /* background: url(img/headerbg.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  mix-blend-mode: normal;
+  height:1117px; */
+}
+header nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+header nav ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header nav ul > li {
+  list-style: none;
+  padding: 5px;
+}
+header nav ul > li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: black;
+}
+
+#sub_head > .head h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#sub_head > .sub p {
+  font-family: 'Lora', serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#sub_head > .nt > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#text_right {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+#text_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#text_left .box {
+  background: rgba(209, 207, 207, 1);
+  width: 40%;
+  height: 400px;
+  left: 62px;
+  top: 1809px;
+}
+#text_left .text{
+    width:50%;
+}
+#text_left p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+@media (min-width:2000px){
+    body{
+        width:2000px;
+        margin:auto;
+    }
+  }
+  
+  @media (max-width:1000px){
+   #text_right, #text_left p {
+    font-size:20px;
+    line-height: 30px;
+   }
+   
+  }
+  @media (max-width:700px){
+    #text_left{
+        display:block;
+    }
+    #text_left .box, #text_left .text{
+        width:100%;
+    }
+
+  }

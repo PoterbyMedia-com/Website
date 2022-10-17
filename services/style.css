@@ -1,0 +1,407 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-family: 'Inter', sans-serif;
+}
+section {
+  margin: 100px 5px;
+}
+
+header {
+  width: 100%;
+  /* background: url(img/headerbg.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  mix-blend-mode: normal;
+  height:1117px; */
+}
+header nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+header nav ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header nav ul > li {
+  list-style: none;
+  padding: 5px;
+}
+header nav ul > li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: black;
+}
+
+.head > div {
+  margin: 20px 0px;
+}
+.head > .heading p {
+  font-family: 'Lora', serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.head > .sub_heading p {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.head > .services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.head > .services span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: rgba(232, 240, 254, 1) !important;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.head > .services span p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.head > .services span img {
+  width: 100px;
+  height: 100px;
+}
+
+.head > .service_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.head > .service_list img {
+  width: 150px;
+  height: 150px;
+}
+.head > .service_list span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#service1 > h3,
+#service2 > h3 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#service1 > p,
+#service2 > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#service1 > article,
+#service2 > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#service1 > article > div,
+#service2 > article > div {
+  width: 500px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px 10px;
+}
+#service1 > article > div h5,
+#service2 > article > div h5 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#service1 > article > div p,
+#service2 > article > div p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#service1 > article > .smm {
+  background: rgba(232, 240, 254, 1);
+}
+#service1 > article > .oa {
+  background: rgba(239, 247, 207, 1);
+}
+#service1 > article > .cm {
+  background: rgba(230, 244, 234, 1);
+}
+#service1 > article > .wdd {
+  background: rgba(56, 56, 56, 1);
+  color: white;
+}
+#service1 > article > .em {
+  background: rgba(252, 232, 230, 1);
+}
+#service1 > article > .ppc {
+  background: rgba(241, 241, 241, 1);
+}
+#service1 > article > .im {
+  background: rgba(232, 240, 254, 1);
+}
+#service1 > article > .add {
+  background: rgba(239, 247, 207, 1);
+}
+#service1 > article > .str {
+  background: rgba(230, 244, 234, 1);
+}
+
+#service1 .proposal_link,
+#service2 .proposal_link {
+  text-align: center;
+}
+#service1 .proposal_link > a,
+#service2 .proposal_link > a {
+  display: inline-block;
+  color: white;
+  background: rgba(27, 82, 223, 1);
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#service2 > article > .gd {
+  background: rgba(232, 240, 254, 1);
+}
+#service2 > article > .br {
+  background: rgba(239, 247, 207, 1);
+}
+#service2 > article > .me {
+  background: rgba(230, 244, 234, 1);
+}
+#service2 > article > .ud {
+  background: rgba(232, 240, 254, 1);
+}
+#service2 > article > .ex {
+  background: rgba(232, 240, 254, 1);
+}
+#service2 > article > .ppc {
+  background: rgba(217, 217, 217, 1);
+}
+
+#recent_works .rw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#recent_works .rw > * {
+  margin: 5px;
+}
+#recent_works .rw img:nth-child(odd) {
+  width: 382px;
+  height: 226px;
+}
+#recent_works .rw img:nth-child(even) {
+  width: 434px;
+  height: 592px;
+}
+#recent_works .rw > div {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 592px;
+}
+#recent_works .rw > div p {
+  font-family: 'Lexend', sans-serif;
+  margin-top: 0px;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 120px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  /* font-family: Kotta One;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 115px;
+    letter-spacing: 0em;
+    text-align: center; */
+}
+
+#recent_works .rw > div img {
+  width: 382px !important;
+  height: 226px !important;
+}
+#recent_works .rd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#recent_works .rd > * {
+  width: 30%;
+  margin: 10px;
+}
+#recent_works .rd img {
+  width: 100%;
+}
+#recent_works .rd .hd {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin: 0px;
+}
+#recent_works .rd .sb {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 0px;
+  margin-bottom: 10px;
+  letter-spacing: 0em;
+}
+
+#eye_catching {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgba(244, 244, 244, 1);
+}
+#eye_catching > * {
+  width: 45%;
+}
+#eye_catching .note > div {
+  width: 70%;
+  margin: auto;
+}
+#eye_catching .note .head {
+  font-family: 'Lexend', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#eye_catching .note .text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+#eye_catching .note .proposal_link {
+  text-align: right;
+}
+#eye_catching .note .proposal_link > a {
+  display: inline-block;
+  color: white;
+  background: rgba(27, 82, 223, 1);
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#ads {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#ads > div {
+  background: rgba(242, 246, 252, 1);
+  width: 403px;
+  height: 403px;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#ads > div img {
+  width: 100px;
+  height: 100px;
+}
+#ads > div > h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#ads > div p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media (min-width:2000px){
+  body{
+      width:2000px;
+      margin:auto;
+  }
+}
+
+@media (max-width:1000px){
+  #eye_catching > *{width:100%}
+  #recent_works .rw{justify-content: center;}
+  #recent_works .rd{justify-content: center;}
+  #recent_works .rw > div p{
+      font-size:50px;
+      line-height:70px;
+  }
+  #recent_works .rw > div{justify-content: center;}
+  #recent_works .rw img:nth-child(even){width:382px;}
+  #recent_works .rd{justify-content: center;}
+  #recent_works .rd > *{width:300px}
+}

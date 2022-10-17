@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  width: 100%;
+  margin: 0px;
+  background:none;
+  height:auto;
+}
+
+#sub_head {
+  margin: 0px;
+  width: 100%;
+  background: rgba(227, 227, 227, 1);
+}
+#sub_head h1 {
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#sub_head h1:last-child {
+  font-family: 'Inter', sans-serif;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#case {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#case h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#case_study div,
+#case_study2 div {
+  margin: auto;
+  text-align: center;
+  line-height: 20px;
+}
+#case_study div > *,
+#case_study2 div > * {
+  margin: 40px 0px;
+}
+#case_study div .case_study_link > a,
+#case_study2 div .case_study_link > a {
+  display: inline-block;
+  color: white;
+  background: rgba(27, 82, 223, 1);
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#case_study,
+#case_study2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#works {
+}
+#works > h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#works > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#works > .links {
+  text-align: center;
+  margin: 20px;
+}
+#works > .links > a {
+  display: inline-block;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#works article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#works article > div {
+  width: 30%;
+  margin: 20px 0px;
+}
+#works article > div img {
+  width: 100%;
+}
+#works article > div p {
+  margin: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#works article > div em {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#works .work_link > a {
+background: #1B52DF;
+border-radius: 10px;
+padding:10px 30px;
+color:white;
+}
+#case_study img,
+#case_study2 img {
+  width: 653.88px;
+  height: 400.27px;
+}
+
+
+
+@media (max-width: 815px){
+  #case_study, #case_study2{
+    justify-content: center;
+  }
+  #case_study2 img{
+    order: 1;
+  }
+}
+@media (max-width: 700px) {
+  #case_study img, #case_study2 img{
+    width:80%;
+  }
+}
+
+@media (max-width: 500px) {
+  #case_study img, #case_study2 img{
+    width:100%;
+  }
+  #works article > div{
+    width:80%;
+  }
+}
