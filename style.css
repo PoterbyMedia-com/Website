@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-img{width:100%;}
+
 body{margin:0px;overflow-x:hidden}
 .container{
   margin:0px;
@@ -29,6 +29,9 @@ header {
   background-size:cover;
   background-position: center;
   height:100vh;
+}
+header img{
+  width:100%;
 }
 header .logo{
   width:40px;
