@@ -23,7 +23,12 @@
   <body>
     <main class="container">
       <header>
-        <nav>
+        <div class="logo">
+          <img src="img/poterbyicon.png" alt="poterby image"/>
+        </div>
+        <div class="menu_bar"> <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/> </div>
+        <nav class="desktop_header">
+          
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
@@ -34,40 +39,65 @@
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
+
+        <nav class="mobile_header">
+          <div class="cancel_menu"><img  src="https://img.icons8.com/color/48/000000/cancel--v1.png"/></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+         
+        </nav>
         <div class="move">
-          <img class="prev" src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/000000/external-left-arrow-arrow-flatart-icons-solid-flatarticons-3.png"/>
-          <img class="next" src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/000000/external-right-arrow-arrow-flatart-icons-solid-flatarticons-4.png"/>
-          
+          <img class="prev" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-Arrow-interface-those-icons-fill-those-icons-2.png"/>
+         
+          <img class="next" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-Arrow-interface-those-icons-fill-those-icons.png"/>
         </div>
       </header>
+
       <section id="partner">
-        <img src="img/google-cloud-partner 1.png" alt="PorterBy media" />
-        <img src="img/google-premier-partner-2022 1.png" alt="PorterBy media" />
-        <img src="img/meta-business-partners 1.png" alt="PoterBy media" />
-        <img src="img/meta-certified-company-2 1.png" alt="PoterBy media" />
-        <img src="img/microsoft-advertising-partner 1.png" />
+        <div> <img src="img/google-cloud-partner 1.png" alt="PorterBy media" /></div>
+        <div>
+          <img src="img/google-premier-partner-2022 1.png" alt="PorterBy media" />
+        </div> 
+        <div>
+          <img src="img/meta-business-partners 1.png" alt="PoterBy media" />
+        </div>
+        <div>
+          <img src="img/meta-certified-company-2 1.png" alt="PoterBy media" />
+        </div>
+        <div><img src="img/microsoft-advertising-partner 1.png" /></div>
       </section>
 
       <section id="proposal">
-        <div class="note">
-          <p class="head">
-            Ready to grow with a digital marketing agency you can trust? Get
-            your free proposal today:
-          </p>
-          <p class="text">
-            Our digital marketing experts have put together thousands of
-            successful digital marketing campaigns for businesses looking to
-            increase leads, phone calls, transactions, and qualified website
-            traffic. They’ll do the same for you. Request a free strategy
-            proposal and get a game plan for elite revenue generation.
-          </p>
-          <p class="proposal_link"><a href="#">Send me a proposal</a></p>
-        </div>
-        <div class="img">
-          <!-- <p class="no_img"></p>
-            <p class="yes_img"></p> -->
-          <img src="img/Group 6.png" />
-        </div>
+        <article>
+          <div class="note">
+            <p class="head">
+              Ready to grow with a digital marketing agency you can trust? Get
+              your free proposal today:
+            </p>
+            <p class="text">
+              Our digital marketing experts have put together thousands of
+              successful digital marketing campaigns for businesses looking to
+              increase leads, phone calls, transactions, and qualified website
+              traffic. They’ll do the same for you. Request a free strategy
+              proposal and get a game plan for elite revenue generation.
+            </p>
+  
+          </div>
+          <div class="img">
+            <!-- <p class="no_img"></p>
+              <p class="yes_img"></p> -->
+            <img src="img/Group 6.png" />
+          </div>
+        </article>
+        
+        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
       </section>
 
       <section id="what_we_do">
@@ -142,26 +172,31 @@
         </div>
       </section>
       <section id="proposal">
-        <div class="note">
-          <p class="head">
-            Ready to grow with a digital marketing agency you can trust? Get
-            your free proposal today:
-          </p>
-          <p class="text">
-            Our digital marketing experts have put together thousands of
-            successful digital marketing campaigns for businesses looking to
-            increase leads, phone calls, transactions, and qualified website
-            traffic. They’ll do the same for you. Request a free strategy
-            proposal and get a game plan for elite revenue generation.
-          </p>
-          <p class="proposal_link"><a href="#">Send me a proposal</a></p>
-        </div>
-        <div class="img">
-          <!-- <p class="no_img"></p>
-            <p class="yes_img"></p> -->
-          <img src="img/Group 6.png" />
-        </div>
+        <article>
+          <div class="note">
+            <p class="head">
+              Ready to grow with a digital marketing agency you can trust? Get
+              your free proposal today:
+            </p>
+            <p class="text">
+              Our digital marketing experts have put together thousands of
+              successful digital marketing campaigns for businesses looking to
+              increase leads, phone calls, transactions, and qualified website
+              traffic. They’ll do the same for you. Request a free strategy
+              proposal and get a game plan for elite revenue generation.
+            </p>
+  
+          </div>
+          <div class="img">
+            <!-- <p class="no_img"></p>
+              <p class="yes_img"></p> -->
+            <img src="img/Group 6.png" />
+          </div>
+        </article>
+        
+        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
       </section>
+
       <section id="about">
         <p>
           “ We’re a team of award-winning strategists, creatives, developers,
@@ -203,25 +238,29 @@
       </section>
 
       <section id="proposal" class="black_proposal">
-        <div class="note">
-          <p class="head">
-            Ready to grow with a digital marketing agency you can trust? Get
-            your free proposal today:
-          </p>
-          <p class="text">
-            Our digital marketing experts have put together thousands of
-            successful digital marketing campaigns for businesses looking to
-            increase leads, phone calls, transactions, and qualified website
-            traffic. They’ll do the same for you. Request a free strategy
-            proposal and get a game plan for elite revenue generation.
-          </p>
-          <p class="proposal_link"><a href="#">Send me a proposal</a></p>
-        </div>
-        <div class="img">
-          <!-- <p class="no_img"></p>
-            <p class="yes_img"></p> -->
-          <img src="img/Group 6.png" />
-        </div>
+        <article>
+          <div class="note">
+            <p class="head">
+              Ready to grow with a digital marketing agency you can trust? Get
+              your free proposal today:
+            </p>
+            <p class="text">
+              Our digital marketing experts have put together thousands of
+              successful digital marketing campaigns for businesses looking to
+              increase leads, phone calls, transactions, and qualified website
+              traffic. They’ll do the same for you. Request a free strategy
+              proposal and get a game plan for elite revenue generation.
+            </p>
+  
+          </div>
+          <div class="img">
+            <!-- <p class="no_img"></p>
+              <p class="yes_img"></p> -->
+            <img src="img/Group 6.png" />
+          </div>
+        </article>
+        
+        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
       </section>
 
       <section id="some_notes">

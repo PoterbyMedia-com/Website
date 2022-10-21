@@ -4,26 +4,45 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+img{width:100%;}
+body{margin:0px;overflow-x:hidden}
+.container{
+  margin:0px;
+  padding:0px;
+}
+
 html {
   font-family: 'Inter', sans-serif;
+  margin:0px;
+  padding:0px;
 }
 
 header {
+  margin:0px;
+  padding:0px;
   width: 100%;
   background: url(img/back4.jpg);
   background-size:100%;
   object-fit: contain;
-  height: 500px;
   position:relative;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
+  height:100vh;
+}
+header .logo{
+  width:40px;
+  position:absolute;
+  /* top:10px; */
+  margin:12px 20px;
+}
+header .menu_bar{
+  display:none;
 }
 header nav {
   width: 100%;
   margin: auto;
   text-align: center;
-  background: rgb(89,107, 109);
 }
 header .move{
   display:flex;
@@ -33,13 +52,17 @@ header .move{
   justify-content: space-between;
   align-items: center;
 }
-header .move img{
+
+header .move img {
   cursor: pointer;
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  background:white;
-  margin:0px 20px;}
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border-radius: 50%;
+  background: white;
+  margin: 0px 20px;
+}
+
 header .move img:active{
   position:relative;
   top:2px;left:3px;
@@ -48,6 +71,7 @@ header .move img:active{
 
 header nav ul {
   padding: 0px;
+  margin:0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -60,31 +84,49 @@ header nav ul > li {
   padding: 5px;
 }
 header nav ul > li a {
+  font-family: 'Lexend', sans-serif;
+  margin:20px 5px;
   display: inline-block;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 900;
   line-height: 16px;
   letter-spacing: 0em;
   color: black;
-  color:white;
+  text-shadow:1px 1px solid blue;
+}
+header nav ul > li a:hover{
+  background:grey;
+  padding:3px 5px;
+  border-radius:4px;
+  color:white!important;
+}
+header .mobile_header{
+  display:none;
 }
 section {
   margin: 100px 5px;
 }
 #partner {
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
+  text-align: center;
+  overflow-x: auto;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  overflow: auto;
+  width:100%;
+}
+
+#partner > div img{
+  width:100%;
 }
 #partner > * {
   margin: 5px;
 }
-#proposal {
+#proposal > article{
   width: 100% !important;
-  padding: 10px 40px;
+  padding: 20px 40px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -92,7 +134,7 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#proposal > div {
+#proposal > article div {
   width: 40%;
   position: relative;
 }
@@ -119,16 +161,18 @@ section {
   font-size: 20px;
   line-height: 24.2px;
 }
-#proposal .note .proposal_link {
-  text-align: right;
+#proposal .proposal_link {
+  text-align: center;
+  margin:10px;
 }
-#proposal .note .proposal_link > a {
+#proposal .proposal_link > a {
   display: inline-block;
   color: white;
   background: rgba(27, 82, 223, 1);
   text-align: right;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  font-size:20px;
+  border-radius: 35px;
 }
 #what_we_do {
   width: 100%;
@@ -276,7 +320,7 @@ section {
   height: 96.36px;
 }
 #client .brand_link {
-  text-align: right;
+  text-align: center;
 }
 
 #client .brand_link > a {
@@ -545,7 +589,7 @@ footer .social_link > ul li {
   .black_proposal {
     padding: 35px;
   }
-  #proposal > div {
+  #proposal > article div {
     width: 100%;
   }
   #what_we_do .note_on_what_we_do > div {
@@ -599,6 +643,38 @@ footer .social_link > ul li {
     flex-wrap: nowrap;
     overflow-x:auto;
   } */
+  header nav{
+    display:none;
+  }
+  header .menu_bar{
+    display:block;
+    width:20px;
+    position: absolute;
+    margin:20px;
+    right:0px;
+    cursor:pointer;
+  }
+
+  header .display_menu{
+    display:block;
+    position:absolute;
+    width:80%;
+    right:0px;
+    background:white;
+    z-index:3;
+  }
+  header .display_menu .cancel_menu{
+    width:20px;
+    position:absolute;
+    right:0px;
+    margin:20px;
+    cursor: pointer;
+  }
+  header .display_menu > ul{
+    display:flex;
+    flex-direction:column;
+    
+  }
   footer h3 {
     text-align: center;
   }
@@ -610,6 +686,9 @@ footer .social_link > ul li {
   }
   #proposal .img {
     height: 100%;
+  }
+  #client{
+    text-align: center;
   }
 }
 
@@ -648,9 +727,22 @@ footer .social_link > ul li {
   header{
     background:none;
     height:auto;
+    position:relative;
+
+  }
+  header .logo {
+    position:relative;
+    top:0px;
+  }
+  header .menu_bar{
+    top:-10px;
   }
   header .move{
     display:none;
+  }
+  header .display_menu{
+    width:90%;
+    right:0px;
   }
   #proposal .note > .head {
     font-size: 23px;
@@ -658,7 +750,7 @@ footer .social_link > ul li {
   #proposal .note > .text {
     font-size: 13px;
   }
-  #proposal .note .proposal_link > a {
+  #proposal .proposal_link > a {
     padding: 5px;
     font-size: 12px;
   }
@@ -720,7 +812,7 @@ footer .social_link > ul li {
 #recent_works .rw > div {
   height: 200px;
 }
-#proposal {
+#proposal > article{
   padding: 5px;
   justify-content: center;
 }
