@@ -75,3 +75,18 @@ window.innerWidth <= 350 ? clearInterval(inter) : null; //stop the interval on s
 prevDom === null || prevDom === void 0 ? void 0 : prevDom.addEventListener('click', prev);
 nextDom === null || nextDom === void 0 ? void 0 : nextDom.addEventListener('click', next);
 //screen size
+//Load on page scroll
+window === null || window === void 0 ? void 0 : window.addEventListener('scroll', reveal);
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        console.dir(reveals[i]);
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        if (revealtop < windowheight - revealpoint)
+            reveals[i].classList.add('active');
+        else
+            reveals[i].classList.remove('active');
+    }
+}

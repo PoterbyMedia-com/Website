@@ -64,6 +64,7 @@ header .move img {
   border-radius: 50%;
   background: white;
   margin: 0px 20px;
+  
 }
 
 header .move img:active{
@@ -96,7 +97,7 @@ header nav ul > li a {
   line-height: 16px;
   letter-spacing: 0em;
   color: black;
-  text-shadow:1px 1px solid blue;
+  transition:all 0.5s ease;
 }
 header nav ul > li a:hover{
   background:grey;
@@ -563,6 +564,18 @@ footer .social_link {
 footer .social_link > ul li {
   margin: 10px;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity:0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity:1;
+}
+
 @media (min-width: 2000px) {
   body {
     width: 2000px;

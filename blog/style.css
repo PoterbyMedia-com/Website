@@ -2,6 +2,7 @@ header {
     width: 100%;
     margin: 0px;
     background: none;
+    background-image:none;
     height: auto;
   }
 
@@ -14,7 +15,7 @@ header {
     width:100%;
 }
 .background_bg div{
-    position:absolute;
+    position:absolute; 
     text-align: center;
     background: rgba(217, 217, 217, 1);
     padding:0px 10px;

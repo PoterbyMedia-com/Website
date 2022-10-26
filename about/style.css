@@ -12,6 +12,7 @@ header {
   width: 100%;
   margin: 0px;
   background: none;
+  background-image: none;
   height: auto;
 }
 
@@ -95,7 +96,7 @@ header {
 }
 #our_founder {
   width: 80%;
-  margin:100px auto;
+  margin: 100px auto;
 }
 #our_founder h3 {
   font-family: 'Inter', sans-serif;
@@ -106,26 +107,27 @@ header {
   text-align: center;
 }
 
-#our_founder > .founders{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#our_founder > .founders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-#our_founder > .founders > div{
-    width:40%;
-    margin:20px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+#our_founder > .founders > div {
+  width: 40%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
-#our_founder > .founders > div p{
-    margin:5px;
+#our_founder > .founders > div p {
+  margin: 5px;
 }
-#our_founder > .founders img{
-    width:100%;
+#our_founder > .founders img {
+  width: 100%;
 }
 @media (max-width: 750px) {
   #about_agency img {
@@ -141,6 +143,10 @@ header {
   }
 }
 @media (max-width: 500px) {
+  #sub_head h1:last-child {
+    font-size: 38px;
+    line-height: 48px;
+  }
   #about_agency .about_content {
     padding: 10px 20px;
   }
@@ -153,5 +159,15 @@ header {
   #about_agency .about_content > p {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+@media (max-width: 300px) {
+  #sub_head h1:last-child {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  #sub_head h1:first-child,
+  #sub_head h1 {
+    font-size: 25px;
   }
 }

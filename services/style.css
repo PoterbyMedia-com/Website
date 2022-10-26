@@ -13,11 +13,8 @@ section {
 
 header {
   width: 100%;
-  /* background: url(img/headerbg.png) no-repeat;
-  background-size: 100%;
-  background-position: center;
-  mix-blend-mode: normal;
-  height:1117px; */
+  background:none;
+  background-image:none;
 }
 header nav {
   width: 100%;
@@ -404,4 +401,20 @@ header nav ul > li a {
   #recent_works .rw img:nth-child(even){width:382px;}
   #recent_works .rd{justify-content: center;}
   #recent_works .rd > *{width:300px}
+}
+@media (max-width:500px){
+  .head > .services{
+    display:block;
+  }
+  .head > .service_list {
+    display: block;
+}
+}
+#service1 > article > div, #service2 > article > div {
+  width: 500px;
+  height: 600px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px 10px;
 }
