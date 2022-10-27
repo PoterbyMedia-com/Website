@@ -225,13 +225,14 @@ section {
   font-family: 'Lexend', sans-serif;
 }
 #what_we_do .note_on_what_we_do {
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   background: rgba(244, 244, 244, 1);
+  border-radius: 20px;
 }
 #what_we_do .note_on_what_we_do > div {
   width: 30%;
