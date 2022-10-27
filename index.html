@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNMPHY5N9W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HNMPHY5N9W');
+    </script>
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +30,7 @@
     <title>PorterBy Media Agency</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
+  
   <body>
     <main class="container">
       <header>
@@ -30,26 +41,26 @@
         <nav class="desktop_header">
           
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="work_page">Works</a></li>
+            <li><a href="clients">Clients</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
           </ul>
         </nav>
 
         <nav class="mobile_header">
           <div class="cancel_menu"><img  src="https://img.icons8.com/color/48/000000/cancel--v1.png"/></div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="work_page">Works</a></li>
+            <li><a href="clients">Clients</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
           </ul>
          
         </nav>
@@ -58,9 +69,15 @@
          
           <img class="next" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-Arrow-interface-those-icons-fill-those-icons.png"/>
         </div>
+
+        <div class="dot_move">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </header>
 
-      <section id="partner">
+      <section id="partner" class="reveal">
         <div> <img src="img/google-cloud-partner 1.png" alt="PorterBy media" /></div>
         <div>
           <img src="img/google-premier-partner-2022 1.png" alt="PorterBy media" />
@@ -74,7 +91,7 @@
         <div><img src="img/microsoft-advertising-partner 1.png" /></div>
       </section>
 
-      <section id="proposal">
+      <section id="proposal" class="reveal">
         <article>
           <div class="note">
             <p class="head">
@@ -97,10 +114,10 @@
           </div>
         </article>
         
-        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
+        <p class="proposal_link"><a href="contact">Send me a proposal</a></p>
       </section>
 
-      <section id="what_we_do">
+      <section id="what_we_do" class="reveal">
         <h3>What we do</h3>
         <div class="note_on_what_we_do">
           <div>
@@ -137,7 +154,7 @@
         </div>
       </section>
 
-      <section id="eye_catching">
+      <section id="eye_catching" class="reveal">
         <div class="note">
           <div>
             <p class="head">Eye-catching graphics 👀 that help you stand out</p>
@@ -152,7 +169,7 @@
         <img src="img/Rectangle 31.png" alt="PoterBy media agency" />
       </section>
 
-      <section id="client">
+      <section id="client" class="reveal">
         <h3>Clients</h3>
         <div class="marquee">
           <div class="marquee-content client_logo">
@@ -169,10 +186,11 @@
             <p class="neu"><img src="img/neutr.png" /></p>
             <p class="nat"><img src="img/nat.png" /></p>
           </div>
-          <p class="brand_link"><a href="#">View all brands</a></p>
+          <p class="brand_link"><a href="clients">View all brands</a></p>
         </div>
       </section>
-      <section id="proposal">
+
+      <section id="proposal" class="reveal">
         <article>
           <div class="note">
             <p class="head">
@@ -195,10 +213,10 @@
           </div>
         </article>
         
-        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
+        <p class="proposal_link"><a href="contact">Send me a proposal</a></p>
       </section>
 
-      <section id="about">
+      <section id="about" class="reveal">
         <p>
           “ We’re a team of award-winning strategists, creatives, developers,
           designers writers, illustrators, animators + digital producers who
@@ -206,7 +224,8 @@
           creativity into the real world with a meaningful experience. ”
         </p>
       </section>
-      <section id="recent_works">
+
+      <section id="recent_works" class="reveal">
         <article class="rw">
           <div>
             <p>
@@ -238,7 +257,7 @@
         </article>
       </section>
 
-      <section id="proposal" class="black_proposal">
+      <section id="proposal" class="black_proposal reveal">
         <article>
           <div class="note">
             <p class="head">
@@ -261,10 +280,10 @@
           </div>
         </article>
         
-        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
+        <p class="proposal_link"><a href="contact">Send me a proposal</a></p>
       </section>
 
-      <section id="some_notes">
+      <section id="some_notes" class="reveal">
         <div class="fs">
           <img src="img/Image File.png" alt="poterby media"/>
             <p>Digital Marketing</p>
@@ -282,14 +301,14 @@
         </div>
       </section>
 
-      <section id="testimonial">
+      <section id="testimonial" class="reveal">
         <div>
           <h3>Testimonial</h3>
           <p class="testy">
             They’ll do the same for you. Request a free strategy proposal and
             get a game plan for elite revenue generation.
           </p>
-          <p class="proposal_link"><a href="#">Send me a proposal</a></p>
+          <p class="proposal_link"><a href="contact">Send me a proposal</a></p>
         </div>
 
         <div class="testy_img">
@@ -307,13 +326,13 @@
       <article>
         <div class="page_link"> 
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Newsroom</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="">Newsroom</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
           <ul>
-            <li>Blog</li>
-            <li>Help</li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Help</a></li>
           </ul>
           <ul>
             <li>Cookie policy</li>
@@ -324,11 +343,11 @@
   
         <div class="social_link">
           <ul>
-            <li><img src="img/Facebook.png"/></li>
-            <li><img src="img/Instagram.png"/></li>
-            <li><img src="img/Pinterest.png"/></li>
-            <li><img src="img/LinkedIn.png"/></li>
-            <li><img src="img/Twitter.png"/></li>
+            <li><a href="https://www.facebook.com/Poterbymedia"><img src="img/Facebook.png"/></a></li>
+            <li><a href="https://www.instagram/poterby"><img src="img/Instagram.png"/> </a></li>
+            <li><a href="https://www.pinterest.com/poterbymedia"><img src="img/Pinterest.png"/></a></li>
+            <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="img/LinkedIn.png"/></a></li>
+            <li><a href="https://twitter.com/Poterbymedia"><img src="img/Twitter.png"/></a></li>
           </ul>
           <p><a href="#">info@poterbymedia.com</a></p>
         </article>

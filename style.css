@@ -29,7 +29,9 @@ header {
   background-size:cover;
   background-position: center;
   height:100vh;
+  position:relative;
 }
+
 header img{
   width:100%;
 }
@@ -64,6 +66,7 @@ header .move img {
   border-radius: 50%;
   background: white;
   margin: 0px 20px;
+  
 }
 
 header .move img:active{
@@ -96,17 +99,49 @@ header nav ul > li a {
   line-height: 16px;
   letter-spacing: 0em;
   color: black;
-  text-shadow:1px 1px solid blue;
+  transition:all 0.5s ease;
 }
-header nav ul > li a:hover{
-  background:grey;
-  padding:3px 5px;
-  border-radius:4px;
-  color:white!important;
+header nav ul > li a:hover {
+  /* background: grey; */
+  /* padding: 3px 5px; */
+  border-radius: 4px;
+  color: rgb(96, 125, 139)!important;
 }
 header .mobile_header{
   display:none;
 }
+header .mobile_header a:hover{
+  color: #9e9e9e!important;
+}
+
+header .dot_move{
+  display:flex;
+  flex-direction: row;
+  position:absolute;
+  position: relative;
+  bottom:120px;
+  justify-content: center;
+  width:100px;
+  text-align: center;
+  margin:auto;
+  align-items: center;
+}
+
+header .dot_move > .dot {
+  margin: 20px 5px;
+  width: 8px;
+  height: 8px;
+  background-color: brown;
+  background-color: rgb(96, 125, 139);
+  border-radius: 50%;
+  box-shadow: 2px 1px 4px 0px rgb(4 4 16);
+  transition: all 0.5s ease-in-out;
+}
+
+header .dot_move > .dot.active{
+  padding:7px;
+}
+
 section {
   margin: 100px 5px;
 }
@@ -563,6 +598,18 @@ footer .social_link {
 footer .social_link > ul li {
   margin: 10px;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity:0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity:1;
+}
+
 @media (min-width: 2000px) {
   body {
     width: 2000px;
@@ -642,10 +689,7 @@ footer .social_link > ul li {
 }
 
 @media (max-width: 650px) {
-  /* #recent_works .rw{
-    flex-wrap: nowrap;
-    overflow-x:auto;
-  } */
+ 
   header nav{
     display:none;
   }

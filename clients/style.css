@@ -99,12 +99,25 @@ header {
     }
 }
 @media (max-width: 500px){
+  #sub_head h1:last-child {
+    font-size: 38px;
+    line-height: 48px;
+  }
     #client_details > article{
         width: 80%;
     }
 }
 @media (max-width: 300px){
+  #sub_head h1:last-child {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  #sub_head h1:first-child,
+  #sub_head h1 {
+    font-size: 25px;
+  }
     #client_details > article{
         width: 90%;
     }
 }
+

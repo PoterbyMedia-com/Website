@@ -12,6 +12,7 @@ header {
   width: 100%;
   margin: 0px;
   background: none;
+  background-image: none;
   height: auto;
 }
 
@@ -41,72 +42,132 @@ header {
   text-align: center;
 }
 
-#about_agency{
- position:relative;
+#about_agency {
+  position: relative;
 }
-#about_agency  img{
- position:absolute;
- top:0;
- width:300px;
- z-index: -9;
- bottom:0px;
+#about_agency img {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  z-index: -9;
+  bottom: 0px;
 }
-#about_agency  .right_bg{
-    top:-10px;
-    right:0;
+#about_agency .right_bg {
+  top: -10px;
+  right: 0;
 }
-#about_agency .about_content{
-    width:90%;
-    margin:auto;
-    text-align: center;
-    background: rgba(232, 240, 254, 1);
-    padding:30px 40px;
-}
-
-#about_agency .about_content > h1{
-    font-family: 'Corben', 'Lexend';
-font-size: 96px;
-font-weight: 700;
-line-height: 18px;
-letter-spacing: 0em;
+#about_agency .about_content {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  background: rgba(232, 240, 254, 1);
+  padding: 30px 40px;
 }
 
-#about_agency .about_content > p{
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
+#about_agency .about_content > h1 {
+  font-family: 'Corben', 'Lexend';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+#about_agency .about_content > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#about_text {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+#about_text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#our_founder {
+  width: 80%;
+  margin: 100px auto;
+}
+#our_founder h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#our_founder > .founders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#our_founder > .founders > div {
+  width: 40%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#our_founder > .founders > div p {
+  margin: 5px;
+}
+#our_founder > .founders img {
+  width: 100%;
+}
+@media (max-width: 750px) {
+  #about_agency img {
+    width: 200px;
+  }
+  #about_agency .about_content > h1 {
+    font-size: 60px;
+  }
+  #about_agency .about_content > p {
+    font-size: 22px;
     font-weight: 400;
-    line-height: 39px;
-    letter-spacing: 0em;
-    text-align: center;
+    line-height: 29px;
+  }
 }
-
-@media (max-width:750px){
-    #about_agency  img{
-        width:200px;
-    }
-    #about_agency .about_content > h1{
-        font-size:60px;
-        
-    }
-    #about_agency .about_content > p{
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 29px;
-    }
+@media (max-width: 500px) {
+  #sub_head h1:last-child {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  #about_agency .about_content {
+    padding: 10px 20px;
+  }
+  #about_agency img {
+    width: 170px;
+  }
+  #about_agency .about_content > h1 {
+    font-size: 60px;
+  }
+  #about_agency .about_content > p {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
-@media (max-width:500px){
-    #about_agency .about_content{
-        padding:10px 20px;
-    }
-    #about_agency  img{
-        width:170px;
-    }
-    #about_agency .about_content > h1{
-        font-size:60px;
-        
-    }
-    #about_agency .about_content > p{
-        font-size:18px;
-        line-height:20px;
-    }
+@media (max-width: 300px) {
+  #sub_head h1:last-child {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  #sub_head h1:first-child,
+  #sub_head h1 {
+    font-size: 25px;
+  }
 }

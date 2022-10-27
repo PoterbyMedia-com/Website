@@ -1,0 +1,172 @@
+header {
+    width: 100%;
+    margin: 0px;
+    background: none;
+    background-image:none;
+    height: auto;
+  }
+
+.background_bg{
+    margin:0px;
+    width:100%;
+    position: relative;
+}
+.background_bg img{
+    width:100%;
+}
+.background_bg div{
+    position:absolute; 
+    text-align: center;
+    background: rgba(217, 217, 217, 1);
+    padding:0px 10px;
+    left:30%;
+    right:30%;
+    bottom:4px;
+}
+.background_bg div > p{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.bloggy{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.bloggy > div{
+    background: rgba(217, 217, 217, 1);
+}
+.bloggy > div:first-child{
+    width:45%;
+    height:400px;
+    background:url(img/blogsamp.png);
+    background-position: center;
+    position:relative;
+}
+.bloggy > div:first-child > div{
+    position:absolute;
+    text-align: center;
+    background: rgba(217, 217, 217, 1);
+    padding:0px 10px;
+    bottom:0px;
+    width:100%;
+}
+.bloggy > div:first-child > div > p{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.bloggy > div:nth-child(2){
+    width:40%;
+    height:500px;
+}
+.bloggy > div:nth-child(3){
+    width:40%;
+    height:500px;
+}
+.bloggy > div:nth-child(4){
+    width:45%;
+    height:400px;
+}
+
+#client_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #client_details > article {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 5px;
+    background: rgba(230, 230, 226, 1);
+    border-radius: 10px;
+  }
+  #client_details > article > div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  #client_details > article img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  #client_details > article .name {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #client_details > article .content {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #client_details > article small{
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+  }
+  
+  @media (max-width: 700px){
+    .background_bg div{
+        padding:0px;
+        width:100%;
+        right:0px;
+        left:0px;
+    }
+    .background_bg div > p{
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+     .bloggy > div{
+        width:80%!important;
+        margin:20px;
+     }
+      #client_details > article{
+          width: 45%;
+      }
+  }
+  @media (max-width: 500px){
+    .bloggy > div{
+        width: 100% !important;
+    }
+    .bloggy > div:first-child > div > p{
+        font-size: 15px;
+    }
+      #client_details > article{
+          width: 80%;
+      }
+  }
+  @media (max-width: 300px){
+      #client_details > article{
+          width: 90%;
+      }
+  }

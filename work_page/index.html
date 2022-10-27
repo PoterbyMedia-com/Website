@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../header.css"/>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,23 +17,47 @@
     <meta name="description" content="PorterBy Media Agency" />
     <meta property="og:title" content="PorterBy Media Agency" />
     <meta property="og:description" content="PorterBy Media Agency" />
-    <!-- <meta property="og:image" content="img/2.jpg" /> -->
-    <!-- <link rel="shortcut icon" href="img/2.jpg" /> -->
+    <meta property="og:image" content="../img/poterbyicon.png" />
+    <link rel="shortcut icon" href="../img/poterbyicon.png" />
     <title>PorterBy Media Agency</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HNMPHY5N9W');
+    </script>
   </head>
   <body>
     <main class="container">
       <header>
-        <nav>
+        <div class="logo">
+          <img src="../img/poterbyicon.png" alt="poterby image"/>
+        </div>
+        <div class="menu_bar"> <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/> </div>
+        <nav class="desktop_header">
+          
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="work_page">Works</a></li>
+            <li><a href="clients">Clients</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
+          </ul>
+        </nav>
+
+        <nav class="mobile_header">
+          <div class="cancel_menu"><img  src="https://img.icons8.com/color/48/000000/cancel--v1.png"/></div>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="work_page">Works</a></li>
+            <li><a href="clients">Clients</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
           </ul>
         </nav>
       </header>
@@ -80,7 +105,7 @@
               for your business. Your colours, fonts, logos, and identity,
               lovingly repackaged for a socially-savvy audience.
             </p>
-            <p class="proposal_link"><a href="#">Send me a proposal</a></p>
+            <p class="proposal_link"><a href="contact">Send me a proposal</a></p>
           </div>
         </div>
         <img src="../img/Rectangle 31.png" alt="PoterBy media agency" />
@@ -167,25 +192,29 @@
       </section>
 
       <section id="proposal" class="black_proposal">
-        <div class="note">
-          <p class="head">
-            Ready to grow with a digital marketing agency you can trust? Get
-            your free proposal today:
-          </p>
-          <p class="text">
-            Our digital marketing experts have put together thousands of
-            successful digital marketing campaigns for businesses looking to
-            increase leads, phone calls, transactions, and qualified website
-            traffic. They’ll do the same for you. Request a free strategy
-            proposal and get a game plan for elite revenue generation.
-          </p>
-          <p class="proposal_link"><a href="#">Send me a proposal</a></p>
-        </div>
-        <div class="img">
-          <!-- <p class="no_img"></p>
-            <p class="yes_img"></p> -->
-          <img src="../img/Group 6.png" />
-        </div>
+        <article>
+          <div class="note">
+            <p class="head">
+              Ready to grow with a digital marketing agency you can trust? Get
+              your free proposal today:
+            </p>
+            <p class="text">
+              Our digital marketing experts have put together thousands of
+              successful digital marketing campaigns for businesses looking to
+              increase leads, phone calls, transactions, and qualified website
+              traffic. They’ll do the same for you. Request a free strategy
+              proposal and get a game plan for elite revenue generation.
+            </p>
+  
+          </div>
+          <div class="img">
+            <!-- <p class="no_img"></p>
+              <p class="yes_img"></p> -->
+            <img src="../img/Group 6.png" />
+          </div>
+        </article>
+        
+        <p class="proposal_link"><a href="#">Send me a proposal</a></p>
       </section>
 
       <section id="client">
@@ -206,9 +235,47 @@
             <p class="nat"><img src="../img/nat.png" /></p>
           </div>
         </div>
-        <p class="brand_link"><a href="#">View all brands</a></p>
+        <p class="brand_link"><a href="clients">View all brands</a></p>
       </section>
     </main>
-    <footer></footer>
+
+   <footer>
+      <h3>We go the extra mile to deliver</h3>
+  
+      <article>
+        <div class="page_link"> 
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="">Newsroom</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Help</a></li>
+          </ul>
+          <ul>
+            <li>Cookie policy</li>
+            <li>Privacy policy</li>
+            <li>Fair Housing</li>
+          </ul>
+        </div>
+  
+        <div class="social_link">
+          <ul>
+            <li><a href="https://www.facebook.com/Poterbymedia"><img src="img/Facebook.png"/></a></li>
+            <li><a href="https://www.instagram/poterby"><img src="img/Instagram.png"/> </a></li>
+            <li><a href="https://www.pinterest.com/poterbymedia"><img src="img/Pinterest.png"/></a></li>
+            <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="img/LinkedIn.png"/></a></li>
+            <li><a href="https://twitter.com/Poterbymedia"><img src="img/Twitter.png"/></a></li>
+          </ul>
+          <p><a href="#">info@poterbymedia.com</a></p>
+        </article>
+     
+      </div>
+      <p>Copyright &copy; 2022 Poterby LTD.</p>
+    </footer>
+    
+    <script type="text/javascript" src="../src/script.js">
+    </script>
   </body>
 </html>

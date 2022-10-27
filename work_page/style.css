@@ -181,4 +181,20 @@ color:white;
   #works article > div{
     width:80%;
   }
+  #sub_head h1:last-child {
+    font-size: 38px;
+    line-height: 48px;
+  } 
+}
+
+@media (max-width: 300px){
+  #sub_head h1:last-child {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  #sub_head h1:first-child,
+  #sub_head h1 {
+    font-size: 25px;
+  }
+
 }

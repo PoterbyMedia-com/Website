@@ -13,11 +13,8 @@ section {
 
 header {
   width: 100%;
-  /* background: url(img/headerbg.png) no-repeat;
-  background-size: 100%;
-  background-position: center;
-  mix-blend-mode: normal;
-  height:1117px; */
+  background:none;
+  background-image:none;
 }
 header nav {
   width: 100%;
@@ -129,5 +126,11 @@ header nav ul > li a {
     #text_left .box, #text_left .text{
         width:100%;
     }
-
+  }
+  @media (max-width:500px){
+    #sub_head > .sub p {
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 62px;
+  }
   }

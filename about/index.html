@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../header.css"/>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,20 +22,46 @@
     <!-- <link rel="shortcut icon" href="img/2.jpg" /> -->
     <title>PorterBy Media Agency</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HNMPHY5N9W');
+    </script>
   </head>
   <body>
     <main class="container">
       <header>
-        <nav>
+        <div class="logo">
+          <img src="../img/poterbyicon.png" alt="poterby image"/>
+        </div>
+        <div class="menu_bar"> <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/> </div>
+        <nav class="desktop_header">
+          
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="works">Works</a></li>
+            <li><a href="clients">Clients</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
           </ul>
+        </nav>
+
+        <nav class="mobile_header">
+          <div class="cancel_menu"><img  src="https://img.icons8.com/color/48/000000/cancel--v1.png"/></div>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="works">Works</a></li>
+            <li><a href="clients">Clients</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
+          </ul>
+         
         </nav>
       </header>
 
@@ -63,41 +91,84 @@
             </div>
             <img src="../img/Ellipse 9.png" class="right_bg"/>
            </section>
+
+           <section id="about_text">
+             <p>
+              Poterby Media is a full-service digital marketing
+              agency. Our dedicated professionals have over<br/>
+              3 years of experience in the fields of digital marketing,<br/>
+              social media, design & advertising.<br/><br/>
+
+              Ever since we launched, we’ve worked with some<br/>
+              of the most valuable brands in Nigeria and in<br/>
+              The UK from tech startups to FMCG brands
+             </p>
+           </section>
+           <section id="our_founder">
+             <h3>Our founders</h3>
+             <div class="founders">
+              <div>
+                <img src="../img/founder.png"/>
+                <small>Tobi Shogbolu</small>
+                <p>Founder & CEO</p>
+               </div>
+               <div>
+                <img src="../img/founder.png"/>
+                <small>Tobi Shogbolu</small>
+                <p>Founder & CEO</p>
+               </div>
+               <div>
+                <img src="../img/founder.png"/>
+                <small>Tobi Shogbolu</small>
+                <p>Founder & CEO</p>
+               </div>
+               <div>
+                <img src="../img/founder.png"/>
+                <small>Tobi Shogbolu</small>
+                <p>Founder & CEO</p>
+               </div>
+             </div>
+           </section>
     </main>
-    <footer>
-        <h3>We go the extra mile to deliver</h3>
-  
-        <article>
-          <div class="page_link"> 
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Newsroom</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-            <ul>
-              <li>Blog</li>
-              <li>Help</li>
-            </ul>
-            <ul>
-              <li>Cookie policy</li>
-              <li>Privacy policy</li>
-              <li>Fair Housing</li>
-            </ul>
-          </div>
     
-          <div class="social_link">
-            <ul>
-              <li><img src="../img/Facebook.png"/></li>
-              <li><img src="../img/Instagram.png"/></li>
-              <li><img src="../img/Pinterest.png"/></li>
-              <li><img src="../img/LinkedIn.png"/></li>
-              <li><img src="../img/Twitter.png"/></li>
-            </ul>
-            <p><a href="#">info@poterbymedia.com</a></p>
-          </article>
-       
+    <footer>
+      <h3>We go the extra mile to deliver</h3>
+
+      <article>
+        <div class="page_link"> 
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="">Newsroom</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Help</a></li>
+          </ul>
+          <ul>
+            <li>Cookie policy</li>
+            <li>Privacy policy</li>
+            <li>Fair Housing</li>
+          </ul>
         </div>
-        <p>Copyright &copy; 2022 Poterby LTD.</p>
-      </footer>
+  
+        <div class="social_link">
+          <ul>
+            <li><a href="https://www.facebook.com/Poterbymedia"><img src="img/Facebook.png"/></a></li>
+            <li><a href="https://www.instagram/poterby"><img src="img/Instagram.png"/> </a></li>
+            <li><a href="https://www.pinterest.com/poterbymedia"><img src="img/Pinterest.png"/></a></li>
+            <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="img/LinkedIn.png"/></a></li>
+            <li><a href="https://twitter.com/Poterbymedia"><img src="img/Twitter.png"/></a></li>
+          </ul>
+          <p><a href="#">info@poterbymedia.com</a></p>
+        </article>
+     
+      </div>
+      <p>Copyright &copy; 2022 Poterby LTD.</p>
+    </footer>
+
+      <script type="text/javascript" src="../src/script.js">
+    
+      </script>
   </body>
 </html>
