@@ -235,10 +235,10 @@ section {
   border-radius: 20px;
 }
 #what_we_do .note_on_what_we_do > div {
-  width: 30%;
+  width: 370px;
   background: rgba(0, 0, 0, 1);
   border-radius: 15px;
-  height: 400px;
+  height: 370px;
   margin: 10px;
   color: white;
   display: flex;
