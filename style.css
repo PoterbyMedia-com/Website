@@ -118,11 +118,11 @@ header .dot_move{
   display:flex;
   flex-direction: row;
   position:absolute;
-  bottom:0px;
+  position: relative;
+  bottom:120px;
   justify-content: center;
   width:100px;
   text-align: center;
-  left:45%;
   margin:auto;
   align-items: center;
 }
@@ -139,10 +139,7 @@ header .dot_move > .dot {
 }
 
 header .dot_move > .dot.active{
-  /* border:1px solid ; */
   padding:7px;
-  /* background:white; */
-  /* box-shadow:none; */
 }
 
 section {
