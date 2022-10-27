@@ -13,7 +13,6 @@ var image_url = [
     // 'back7.jpg',
 ];
 function checkbgcolor(count) {
-    console.log("bg", count);
     if (count === 0) {
         navitem.forEach(function (a) { return a.style.color = "rgb(116,79,99)"; });
     }
@@ -34,17 +33,24 @@ cancel_menu === null || cancel_menu === void 0 ? void 0 : cancel_menu.addEventLi
 function removeMenu() {
     menuitems === null || menuitems === void 0 ? void 0 : menuitems.classList.remove("display_menu");
 }
+var getdot = document.querySelectorAll(".dot_move > .dot");
+var nextDom = document.querySelector('.move > .next');
 var prevDom = document.querySelector('.move > .prev');
 var next = function () {
     if (window.innerWidth >= 350) {
+        getdot.forEach(function (element) {
+            element.classList.remove("active");
+        }); //making all the dot boxes unactive
         if (count < image_url.length - 1) {
             ++count;
             header.style.backgroundImage = "url(img/".concat(image_url[count], ")");
-            checkbgcolor(count);
+            getdot[count].classList.add("active"); //making the position of the below dot active when the image is displayed in that position
+            checkbgcolor(count); //check the background color
         }
         else {
             count = 0;
             header.style.backgroundImage = "url(img/".concat(image_url[count], ")");
+            getdot[count].classList.add("active");
             checkbgcolor(count);
         }
     }
@@ -52,17 +58,21 @@ var next = function () {
         header.style.backgroundImage = "";
     }
 };
-var nextDom = document.querySelector('.move > .next');
 var prev = function () {
     if (window.innerWidth >= 350) {
+        getdot.forEach(function (element) {
+            element.classList.remove("active");
+        }); //making all the dot boxes unactive
         if (count > 0) {
             --count;
             header.style.backgroundImage = "url(img/".concat(image_url[count], ")");
+            getdot[count].classList.add("active");
             checkbgcolor(count);
         }
         else {
             count = image_url.length - 1;
             header.style.backgroundImage = "url(img/".concat(image_url[count], ")");
+            getdot[count].classList.add("active");
             checkbgcolor(count);
         }
     }

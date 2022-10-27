@@ -16,7 +16,6 @@ const image_url: string[] = [
 ];
 
 function checkbgcolor(count : number) : void{
-  console.log("bg", count)
   if(count === 0){
    navitem.forEach(a => a.style.color = "rgb(116,79,99)")
   }else{
@@ -40,17 +39,25 @@ function removeMenu(){
   menuitems?.classList.remove("display_menu")
 }
 
-
+const getdot = document.querySelectorAll(".dot_move > .dot");
+const nextDom = document.querySelector('.move > .next');
 const prevDom = document.querySelector('.move > .prev');
+
 const next = (): void => {
   if (window.innerWidth >= 350) {
+    getdot.forEach(element => {
+      element.classList.remove("active")
+    });//making all the dot boxes unactive
+
     if (count < image_url.length - 1) {
       ++count
       header.style.backgroundImage = `url(img/${image_url[count]})`;
-      checkbgcolor(count);
+      getdot[count].classList.add("active")//making the position of the below dot active when the image is displayed in that position
+      checkbgcolor(count);//check the background color
     } else {
       count = 0;
       header.style.backgroundImage = `url(img/${image_url[count]})`;
+      getdot[count].classList.add("active")
       checkbgcolor(count);
     }
   } else{
@@ -59,16 +66,22 @@ const next = (): void => {
 
 };
 
-const nextDom = document.querySelector('.move > .next');
+
+
 const prev = (): void => {
     if (window.innerWidth >= 350){
+      getdot.forEach(element => {
+        element.classList.remove("active")
+      });//making all the dot boxes unactive
         if (count > 0) {
             --count;
             header.style.backgroundImage = `url(img/${image_url[count]})`;
+            getdot[count].classList.add("active")
             checkbgcolor(count);
           } else {
             count = image_url.length - 1;
             header.style.backgroundImage = `url(img/${image_url[count]})`;
+            getdot[count].classList.add("active")
             checkbgcolor(count);
           }
     }
