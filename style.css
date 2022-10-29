@@ -248,6 +248,7 @@ section {
   background: rgba(244, 244, 244, 1);
   border-radius: 20px;
 }
+
 #what_we_do .note_on_what_we_do > div {
   width: 370px;
   background: rgba(0, 0, 0, 1);
@@ -257,11 +258,12 @@ section {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0px 20px;
   text-align: center;
 }
+
 #what_we_do .note_on_what_we_do > div img {
   width: 100px;
   height: 100px;
@@ -275,6 +277,9 @@ section {
 }
 #eye_catching > * {
   width: 45%;
+}
+#eye_catching .note{
+  flex:1;
 }
 #eye_catching .note > div {
   width: 70%;
@@ -306,6 +311,19 @@ section {
   padding: 10px;
   border-radius: 35px;
 }
+#eye_catching  .mobile_proposal_link {
+  display:none;
+  text-align: center;
+}
+#eye_catching  .mobile_proposal_link > a {
+  display: inline-block;
+  color: white;
+  background: rgba(27, 82, 223, 1);
+  text-align: right;
+  padding: 10px;
+  border-radius: 35px;
+}
+
 #client {
   width: 90%;
   margin: 100px auto;
@@ -385,6 +403,7 @@ section {
   letter-spacing: 0px;
   padding: 16.3042px 27.95px;
   background: #d2522e;
+  background:black;
   border-radius: 34.9375px;
   color: white;
 }
@@ -396,13 +415,13 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 20px 0px;
   overflow-x: auto;
 }
 #recent_works .rw > * {
-  margin: 5px;
+  margin: 5px 20px;
 }
 #recent_works .rw img:nth-child(odd),
 #recent_works .rw > div img {
@@ -553,6 +572,9 @@ section {
 #testimonial .proposal_link {
   text-align: center;
 }
+#testimonial .mobile_proposal_link {
+ display:none;
+}
 #testimonial .proposal_link > a {
   display: inline-block;
   color: white;
@@ -664,12 +686,20 @@ footer .social_link > ul li {
   #eye_catching > * {
     width: 100%;
   }
+
+  #eye_catching .note .proposal_link {
+    display:none;
+  }
+  #eye_catching  .mobile_proposal_link {
+    display:block;
+  }
+
   #client {
     width: 100%;
   }
   #about p {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 33px;
     padding: 10px;
   }
   #recent_works .rw {
@@ -701,6 +731,12 @@ footer .social_link > ul li {
   }
   #testimonial > div {
     width: 80%;
+  }
+  #testimonial .proposal_link {
+   display:none;
+  }
+  #testimonial .mobile_proposal_link {
+    display:block;
   }
 }
 
