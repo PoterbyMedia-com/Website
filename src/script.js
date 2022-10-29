@@ -12,17 +12,19 @@ var image_url = [
     'back6.jpg',
     // 'back7.jpg',
 ];
+var menu = document.querySelector("header > .menu_bar"); //menu bar
 function checkbgcolor(count) {
     if (count === 0) {
         navitem.forEach(function (a) { return a.style.color = "rgb(116,79,99)"; });
+        menu.style.background = "rgba(96,125,139,0.49)";
     }
     else {
         navitem.forEach(function (a) { return a.style.color = "black"; });
+        menu.style.background = "none";
     }
 }
 //function to display menu bar on mobile
 var menuitems = document.querySelector("header > .mobile_header");
-var menu = document.querySelector("header > .menu_bar");
 menu === null || menu === void 0 ? void 0 : menu.addEventListener("click", displayMenu);
 function displayMenu() {
     menuitems === null || menuitems === void 0 ? void 0 : menuitems.classList.add("display_menu");

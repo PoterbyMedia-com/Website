@@ -15,17 +15,21 @@ const image_url: string[] = [
   // 'back7.jpg',
 ];
 
+const menu = document.querySelector("header > .menu_bar")//menu bar
+
 function checkbgcolor(count : number) : void{
   if(count === 0){
    navitem.forEach(a => a.style.color = "rgb(116,79,99)")
+   menu.style.background = "rgba(96,125,139,0.49)"
   }else{
    navitem.forEach(a => a.style.color = "black")
+   menu.style.background = "none"
   }
 }
 
 //function to display menu bar on mobile
 const menuitems = document.querySelector("header > .mobile_header")
-const menu = document.querySelector("header > .menu_bar")
+
 
 menu?.addEventListener("click", displayMenu)
 function displayMenu() {
