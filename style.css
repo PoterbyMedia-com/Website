@@ -4,7 +4,12 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+img{
+  transition:all 0.5s linear;
+}
+img:hover{
+  transform:scale(1.04);
+}
 body{margin:0px;overflow-x:hidden}
 .container{
   margin:0px;
@@ -180,13 +185,22 @@ section {
   margin-top: 0px;
 }
 #proposal .img {
-  width: 686px;
+  width: 600px;
   height: 464px;
   position: relative;
+  background: rgb(164, 253, 178);
+  padding:0px;
+  margin:0px;
 }
+
 #proposal img {
-  width: 100%;
+  width: 106%;
   height: 464px;
+  transition:all 0.5s linear;
+  cursor:pointer;
+}
+#proposal img:hover{
+  transform: scale(1.1);
 }
 
 #proposal .note > .head {
@@ -244,7 +258,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 20px;
   text-align: center;
 }
 #what_we_do .note_on_what_we_do > div img {
@@ -289,7 +303,7 @@ section {
   background: rgba(27, 82, 223, 1);
   text-align: right;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 35px;
 }
 #client {
   width: 90%;
@@ -468,6 +482,7 @@ section {
   color: white;
   width: 100%;
   border-radius: 15px;
+  padding:8px 0px;
 }
 
 #some_notes {
@@ -543,7 +558,7 @@ section {
   background: rgba(27, 82, 223, 1);
   text-align: right;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 35px;
 }
 
 footer {
