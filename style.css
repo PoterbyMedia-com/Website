@@ -505,36 +505,6 @@ section {
   padding:8px 0px;
 }
 
-#some_notes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#some_notes > div {
-  width: 30%;
-  height: 613px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding:0px 20px;
-  text-align: center;
-}
-#some_notes > div img{
-  width:100px;
-  height: 100px;
-}
-#some_notes > .fs {
-  background: rgba(255, 250, 234, 1);
-}
-#some_notes > .sd {
-  background: rgba(242, 246, 252, 1);
-}
-#some_notes > .td {
-  background: rgba(237, 249, 248, 1);
-}
 #testimonial {
   display: flex;
   flex-direction: row;
