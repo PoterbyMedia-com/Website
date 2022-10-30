@@ -94,41 +94,7 @@ header {
   letter-spacing: 0em;
   text-align: center;
 }
-#our_founder {
-  width: 80%;
-  margin: 100px auto;
-}
-#our_founder h3 {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39px;
-  letter-spacing: 0em;
-  text-align: center;
-}
 
-#our_founder > .founders {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#our_founder > .founders > div {
-  width: 40%;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-#our_founder > .founders > div p {
-  margin: 5px;
-}
-#our_founder > .founders img {
-  width: 100%;
-}
 @media (max-width: 750px) {
   #about_agency img {
     width: 200px;
