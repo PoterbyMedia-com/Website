@@ -599,6 +599,7 @@ footer .social_link > ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding:0px;
 }
 footer .social_link {
   text-align: center;

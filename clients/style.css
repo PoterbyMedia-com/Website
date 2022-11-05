@@ -53,6 +53,8 @@ header {
   margin: 20px 5px;
   background: rgba(230, 230, 226, 1);
   border-radius: 10px;
+  height:400px;
+  position:relative;
 }
 #client_details > article > div{
   display:flex;
@@ -77,25 +79,36 @@ header {
 }
 #client_details > article .content {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
 }
-#client_details > article small{
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-    
+#client_details > article small {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1200px){
+    #client_details > article{
+        width: 40%;
+    }
+}
+@media (max-width: 900px){
     #client_details > article{
         width: 45%;
+    }
+}
+@media (max-width: 700px){
+    #client_details > article{
+        width: 400px;
     }
 }
 @media (max-width: 500px){
