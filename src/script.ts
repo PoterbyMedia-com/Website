@@ -115,3 +115,5 @@ function reveal(): void {
     else reveals[i].classList.remove('active');
   }
 }
+
+
