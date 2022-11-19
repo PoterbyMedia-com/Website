@@ -136,10 +136,9 @@ header .dot_move > .dot {
   margin: 20px 5px;
   width: 8px;
   height: 8px;
-  background-color: brown;
-  background-color: rgb(96, 125, 139);
+  background-color: rgb(219, 202, 51);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  box-shadow: 2px 1px 4px 0px rgb(4 4 16);
   transition: all 0.5s ease-in-out;
 }
 
@@ -149,7 +148,7 @@ header .dot_move > .dot.active{
 
 
 section {
-  margin: 100px 5px;
+  margin: 50px 5px;
 }
 #partner {
   display:flex;
@@ -238,6 +237,7 @@ section {
   line-height: 60px;
   letter-spacing: 0em;
   font-family: 'Lexend', sans-serif;
+  text-align: center;
 }
 #what_we_do .note_on_what_we_do {
   width: 80%;
@@ -262,6 +262,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   padding: 0px 20px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -269,6 +270,7 @@ section {
   width: 100px;
   height: 100px;
 }
+
 #eye_catching {
   display: flex;
   flex-direction: row;
