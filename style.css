@@ -774,6 +774,7 @@ footer .social_link > ul li {
   }
   #proposal img {
     height: 300px;
+    width:100%;
   }
   #proposal .img {
     height: 100%;
