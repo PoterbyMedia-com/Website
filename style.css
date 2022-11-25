@@ -146,19 +146,32 @@ header .dot_move > .dot.active{
   padding:7px;
 }
 
-header .link-phone_number {
-  font-size: 12px;
-  font-weight: 700;
-  font-family: var(--font-inter);
-  letter-spacing: -.032em;
-  color: var(--gray-05);
-  text-decoration: none;
-  vertical-align: middle;
-  margin-right: 8px;
-  text-align: right;
+header .contact_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.33);
+  width: 100%;
 }
-
-
+header .contact_head .but_link a {
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background: rgb(43, 159, 94);
+}
+header .contact_head .link-phone_number a{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color:black;
+  font-family: 'Lexend', sans-serif;
+}
+header .contact_head .link-phone_number img{
+  width:30px;
+}
 section {
   margin: 50px 5px;
 }
@@ -785,6 +798,16 @@ footer .social_link > ul li {
 }
 
 @media (max-width: 400px) {
+  header .contact_head .but_link a {
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  header .contact_head .link-phone_number a{
+    font-size:10px;
+  }
+  header .contact_head .link-phone_number img{}
   #recent_works .rd > * {
     width: 90%;
   }
@@ -816,11 +839,15 @@ footer .social_link > ul li {
   }
 }
 @media (max-width: 330px) {
+ 
   header{
     background:none;
     height:auto;
     position:relative;
-
+    background-image: none;
+  }
+  header .contact_head{
+    display:none;
   }
   header .logo {
     position:relative;
@@ -839,6 +866,10 @@ footer .social_link > ul li {
     width:90%;
     right:0px;
   }
+  #partner {
+    margin:0px;
+  }
+  
   #proposal .note > .head {
     font-size: 23px;
   }
