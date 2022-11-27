@@ -12,22 +12,33 @@ var image_url = [
     'back6.jpg',
     // 'back7.jpg',
 ];
-var menu = document.querySelector("header > .menu_bar"); //menu bar
+
 function checkbgcolor(count) {
     if (count === 0) {
         navitem.forEach(function (a) { return a.style.color = "rgb(116,79,99)"; });
-        menu.style.background = "rgba(96,125,139,0.49)";
+       // menu.style.background = "rgba(96,125,139,0.49)";
     }
     else {
         navitem.forEach(function (a) { return a.style.color = "black"; });
-        menu.style.background = "none";
+       // menu.style.background = "none";
     }
 }
 //function to display menu bar on mobile
-var menuitems = document.querySelector("header > .mobile_header");
+var menu = document.querySelector("header .menu_bar"); //menu bar
+var menu_img = document.querySelector("header .menu_bar > img"); //menu barimg
+var menuitems = document.querySelector("header .mobile_header");
 menu === null || menu === void 0 ? void 0 : menu.addEventListener("click", displayMenu);
+let i = 0;
 function displayMenu() {
-    menuitems === null || menuitems === void 0 ? void 0 : menuitems.classList.add("display_menu");
+    i++;
+    menuitems.classList.add("display_menu");
+    if(i%2 == 0){
+        menu_img.src = "https://img.icons8.com/material-outlined/24/000000/menu--v1.png" 
+        menuitems.classList.remove("display_menu");
+    }else{
+        menu_img.src = "https://img.icons8.com/color/48/000000/cancel--v1.png"
+        menuitems.classList.add("display_menu");
+    }
 }
 //function to remove menu bar on mobile
 var cancel_menu = document.querySelector("header .cancel_menu");
