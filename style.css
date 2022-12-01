@@ -643,7 +643,7 @@ footer h3 {
 }
 footer article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -763,8 +763,6 @@ footer .social_link > ul li {
     padding: 35px;
   }
   #proposal > article {
-    flex-direction: column;
-
     align-items: center;
   }
   #proposal > article div {

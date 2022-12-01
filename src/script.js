@@ -68,7 +68,7 @@ var next = function () {
         }
     }
     else {
-        header.style.backgroundImage = "";
+        header.style.backgroundImage = "none";
     }
 };
 var prev = function () {
@@ -90,7 +90,7 @@ var prev = function () {
         }
     }
     else {
-        header.style.backgroundImage = "";
+        header.style.backgroundImage = "none";
     }
 };
 var inter = setInterval(next, 40000);
