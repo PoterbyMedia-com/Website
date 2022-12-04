@@ -43,7 +43,6 @@ header .header_desktop {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: white;
   justify-content: center;
 }
 
@@ -178,7 +177,7 @@ header .contact_head {
   justify-content: space-between;
   padding: 20px 10px;
   align-items: center;
-  background: rgba(255, 255, 255, 0.33);
+  background: rgb(255, 255, 255);
   width: 100%;
 }
 header .contact_head .but_link a {
