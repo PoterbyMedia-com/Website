@@ -231,6 +231,8 @@ section {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right:130px;
 }
 #proposal .proposal_mobile_link {
   display: none;
