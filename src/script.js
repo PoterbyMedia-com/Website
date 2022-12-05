@@ -101,3 +101,76 @@ function reveal() {
             reveals[i].classList.remove('active');
     }
 }
+
+
+// let prod = document.getElementById("#recent_works")
+// const productContainer = prod.querySelector(".rw");
+// console.log(productContainer);
+// console.log(prod)
+// let productItemWidth;
+
+// function click(){
+//     productContainer.scrollBy({ left: productItemWidth, behavior: "smooth" });
+// }
+// click()
+// // console.log(click());
+// setInterval( ()=>{
+//     click()
+//     "jump"
+// }, 3000)
+
+
+
+// const servicesModule = JSON.parse(localStorage.getItem('products'));
+let carouselCont =document.querySelector('.coverage .main3')
+let all = [
+    "img/recent.png",
+    "img/pencil.png",
+    "img/Rectangle 9.png",
+    "img/Rectangle 8.png"
+];
+
+function render(refresh=false, animClass='slideInRight'){
+    if(refresh)carouselCont.innerHTML="";
+    all.map(item=>{
+    return  carouselCont.innerHTML +=`<div class="main2_wrapper ${animClass}">
+        <div class="image_wrapper"><img class="image" src="${item}" alt=""></div>
+        
+        </div>`
+    }).join('');
+    console.log(item.image)
+
+}
+
+
+let slideShow = setInterval(moveLeft,2000);
+
+function moveLeft(){
+    let off = all.shift();
+    all.push(off)
+    render(true);
+}
+render();
+
+function moveRight(){
+    let off = all.pop();
+    all.unshift(off)
+    render(true,'slideInLeft');
+}
+
+document.querySelector('.main2 .left').onmouseover = pauseSlideshow;
+document.querySelector('.main2 .left').onmouseout = playSlideshow;
+
+document.querySelector('.main2 .right').onmouseover = pauseSlideshow;
+document.querySelector('.main2 .right').onmouseout = playSlideshow;
+
+carouselCont.onmouseover = pauseSlideshow;
+carouselCont.onmouseout = playSlideshow;
+    
+function pauseSlideshow(){
+    return clearInterval(slideShow);
+}
+
+function playSlideshow(){
+ return slideShow =  setInterval(moveLeft,2000);
+}
