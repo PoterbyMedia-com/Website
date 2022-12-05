@@ -167,6 +167,21 @@ header nav ul > li a {
   text-align: center;
 }
 
+#service1 .services_link,
+#service2 .services_link {
+  text-align: center;
+}
+#service1 .services_link > a,
+#service2 .services_link > a {
+  display: inline-block;
+  color: white;
+  background: rgb(7, 7, 7);
+  text-align: right;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
 #service1 > article > .smm {
   background: rgba(232, 240, 254, 1);
 }
