@@ -4,12 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-img {
-  transition: all 0.5s linear;
-}
-img:hover {
-  transform: scale(1.04);
-}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0px;
@@ -250,6 +245,8 @@ section {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right:130px;
 }
 #proposal .proposal_mobile_link {
   display: none;
@@ -703,7 +700,7 @@ footer .social_link > ul li {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s ease;
+
 }
 .reveal.active {
   transform: translateY(0px);
