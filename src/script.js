@@ -1,3 +1,18 @@
+const menuIcon = document.querySelector(".menu-icon");
+const lines = document.querySelectorAll(".menu-icon div");
+console.log(menuIcon);
+const hide = document.querySelector('.hide')
+menuIcon.addEventListener("click", () => {
+    console.log("yes");
+  for (i = 0; i < lines.length; i++) {
+    lines[i].classList.toggle("animate");
+    lines[i].classList.remove("start")
+    lines[i].classList.toggle("animation")
+    hide.classList.toggle("hide-style")
+  }
+//   hide.style.visibility = 'visible'
+
+});
 var header;
 header = document.querySelector('header');
 var navitem;
@@ -24,24 +39,27 @@ function checkbgcolor(count) {
     }
 }
 //function to display menu bar on mobile
-var menu = document.querySelector("header .menu_bar"); //menu bar
-var menu_img = document.querySelector("header .menu_bar > img"); //menu barimg
-var menuitems = document.querySelector("header .mobile_header");
-menu === null || menu === void 0 ? void 0 : menu.addEventListener("click", displayMenu);
-let i = 0;
-function displayMenu() {
-    i++;
-    menuitems.classList.add("display_menu");
-    if(i%2 == 0){
-        menu_img.src = "https://img.icons8.com/material-outlined/24/000000/menu--v1.png" 
-        menuitems.classList.remove("display_menu");
-    }else{
-        menu_img.src = "https://img.icons8.com/color/48/000000/cancel--v1.png"
-        menuitems.classList.add("display_menu");
-    }
-}
+// var menu = document.querySelector(".nav .menu_bar"); //menu bar
+// console.log(menu);
+// var menu_img = document.querySelector(".nav .menu_bar > img"); //menu barimg
+// console.log(menu_img);
+// var menuitems = document.querySelector(".nav  .mobile_header");
+// console.log(menuitems);
+// menu === null || menu === void 0 ? void 0 : menu.addEventListener("click", displayMenu);
+// let i = 0;
+// function displayMenu() {
+//     i++;
+//     menuitems.classList.add("display_menu");
+//     if(i%2 == 0){
+//         menu_img.src = "https://img.icons8.com/material-outlined/24/000000/menu--v1.png" 
+//         menuitems.classList.remove("display_menu");
+//     }else{
+//         menu_img.src = "https://img.icons8.com/color/48/000000/cancel--v1.png"
+//         menuitems.classList.add("display_menu");
+//     }
+// }
 //function to remove menu bar on mobile
-var cancel_menu = document.querySelector("header .cancel_menu");
+var cancel_menu = document.querySelector(".nav .cancel_menu");
 cancel_menu === null || cancel_menu === void 0 ? void 0 : cancel_menu.addEventListener("click", removeMenu);
 function removeMenu() {
     menuitems === null || menuitems === void 0 ? void 0 : menuitems.classList.remove("display_menu");
@@ -93,7 +111,7 @@ var prev = function () {
         header.style.backgroundImage = "none";
     }
 };
-var inter = setInterval(next, 40000);
+var inter = setInterval(next, 9000);
 window.innerWidth <= 350 ? clearInterval(inter) : null; //stop the interval on smaller screen
 prevDom === null || prevDom === void 0 ? void 0 : prevDom.addEventListener('click', prev);
 nextDom === null || nextDom === void 0 ? void 0 : nextDom.addEventListener('click', next);
@@ -185,3 +203,30 @@ function pauseSlideshow(){
 function playSlideshow(){
  return slideShow =  setInterval(moveLeft,2000);
 }
+
+
+// Get the button:
+let mybutton = document.querySelector(".sticker");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+const navToggle = document.querySelector(".nav-toggle");
+const linksContainer = document.querySelector(".links-container");
+const links = document.querySelector(".links");
+
+
