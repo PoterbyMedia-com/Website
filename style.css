@@ -82,6 +82,18 @@ flex-direction: row;
  height:35px;
  
 }
+.home_text > a{
+  width:130px !important;
+  background-color: black!important;
+  cursor: pointer !important;
+}
+
+
+.home_text h1{
+  font-size: 75px;
+  line-height: 100px;
+  font-weight: 100;
+}
 .nav .link-phone_number img {
   width: 24px;
 
@@ -177,8 +189,7 @@ flex-direction: row;
   align-items: center;
   /* background-color: #d9dd20; */
   padding-bottom: -20px;
-  /* position: relative; */
-  font-family: poppins;
+  margin-top: -100px;
 }
 
 .bg-container .move{
@@ -283,13 +294,20 @@ section {
 }
 #partner {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   overflow-x: auto;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow: auto;
   width: 100%;
+  padding: 20px;
+  gap:3em;
+}
+#partner > div{
+  width: 200px;
+  background-color: #d9dd20;
 }
 
 #partner > div img {
@@ -301,10 +319,10 @@ section {
 #proposal > article {
   width: 100% !important;
   padding: 20px 40px;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items:center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 100px;
@@ -650,9 +668,12 @@ section {
 .black_proposal {
   background: black;
   color: white;
-  width: 100%;
+  width: 95%;
   border-radius: 15px;
   padding: 8px 0px;
+}
+.black_proposal article{
+  width:90%;
 }
 
 #testimonial {
@@ -791,6 +812,10 @@ footer .social_link > ul li {
 }
 
 @media only screen and (max-width: 850px) {
+  .home_text h1{
+    font-size: 45px;
+    ;
+  }
   .center{
     display: block !important;
    
@@ -937,7 +962,10 @@ footer .social_link > ul li {
 @media (max-width: 766px) {
 }
 @media (max-width: 650px) {
- 
+  #proposal > article{
+    display: flex;
+    flex-direction: column-reverse;
+  }
   /* / */
   .nav .menu_bar {
     display: block;
@@ -973,7 +1001,29 @@ footer .social_link > ul li {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
+  #proposal > article{
+    display:inline-flex;
+    flex-direction: column-reverse;
+    gap:2em;
+
+  }
+  #proposal > article div{
+    width:300px !important;
+    margin: auto;
+    margin-left: -50px !important;
+  }
+  
+
+  .home_text .title{
+    width:300px;
+    /* background-color: #d9dd20; */
+  }
+  .home_text h1{
+    font-size: 20px;
+    /* line-height: 100px; */
+    font-weight: 700;
+  }
   .nav .contact_head .but_link a {
     color: white;
     border-radius: 10px;
@@ -1019,7 +1069,15 @@ footer .social_link > ul li {
     margin: 0px;
   }
 }
+@media (max-width: 375px) {
+  #proposal > article div{
+    width:300px !important;
+    margin: auto;
+    margin-left: -80px !important;
+  }
+}
 @media (max-width: 330px) {
+
   .nav {
     background: none;
     height: auto;
