@@ -4,15 +4,19 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  
+}
+*{
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
   display: block;
   /* position: relative; */
+  width:100vw !important;
 }
 
 header {
@@ -1089,6 +1093,9 @@ footer .social_link > ul li {
   }
 }
 @media (max-width: 375px) {
+  .home_text{
+    width:200px;
+  }
   #proposal > article div{
     width:300px !important;
     margin: auto;
