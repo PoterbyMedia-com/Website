@@ -94,7 +94,7 @@ flex-direction: row;
 
 
 .home_text h1{
-  font-size: 65px;
+  /* font-size: 65px; */
   /* line-height: 100px; */
   font-weight: 100;
   font-family: 'DM Serif Display', serif !important;
@@ -992,7 +992,7 @@ footer .social_link > ul li {
     gap:3em;
   }
   .home_text  h1 {
-    font-size: 30px;
+    font-size: 10px;
   }
   #proposal > article {
     display: flex;
@@ -1050,6 +1050,10 @@ footer .social_link > ul li {
 }
 
 @media (max-width: 430px) {
+  .home_text h1{
+    font-size:20px !important;
+    line-height: 50px;
+   }
   #proposal .proposal_desktop_link {
     display: block;
   }
@@ -1070,14 +1074,10 @@ footer .social_link > ul li {
   }
   
 
-  .home_text .title{
-    width:300px;
-    /* background-color: #d9dd20; */
-  }
   .home_text h1{
     font-size: 20px;
-    line-height: 50px;
-    font-weight: 700;
+    line-height: 20px;
+    /* font-weight: 700; */
   }
   .nav .contact_head .but_link a {
     color: white;
@@ -1126,14 +1126,13 @@ footer .social_link > ul li {
 }
 @media (max-width: 375px) {
   .home_text h1{
-    line-height: 100px !important;
+    line-height: 50px !important;
+    font-size: 24px !important;
   }
-  .home_text .title {
-    width:500px;
-  }
-  .home_text{
+  
+  /* .home_text{
     width:200px;
-  }
+  } */
   #proposal > article div{
     width:300px !important;
     margin: auto;
@@ -1141,7 +1140,11 @@ footer .social_link > ul li {
   }
 }
 @media (max-width: 330px) {
-
+  .home_text h1{
+    font-size: 10px !important;
+    line-height: 10px;
+    /* font-weight: 700; */
+  }
   .nav {
     background: none;
     height: auto;
