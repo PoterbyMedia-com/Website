@@ -830,14 +830,6 @@ footer .social_link > ul li {
 }
 
 @media only screen and (max-width: 850px) {
-  footer article {
-    display: flex;
-    min-width:350px !important;
-  }
-  footer article .social_link{
-    width: 100%;
-    display: flex;
-  }
   .home_text h1{
     font-size: 45px;
     ;
@@ -1029,12 +1021,7 @@ footer .social_link > ul li {
     text-align: center;
   }
   footer article {
-    display: flex;
-    min-width:350px !important;
-  }
-  footer article .social_link{
-    width: 100%;
-    display: flex;
+    display: block;
   }
   #proposal img {
     height: 300px;
@@ -1049,13 +1036,7 @@ footer .social_link > ul li {
 }
 
 @media (max-width: 430px) {
-  #proposal .proposal_desktop_link {
-    display: block;
-  }
-  #proposal .proposal_mobile_link {
-    display:none;
-    margin: 20px auto;
-  }
+  
   #proposal > article{
     display:inline-flex;
     flex-direction: column-reverse;
@@ -1065,7 +1046,7 @@ footer .social_link > ul li {
   #proposal > article div{
     width:300px !important;
     margin: auto;
-    margin-left: -80px !important;
+    margin-left: -50px !important;
   }
   
 
