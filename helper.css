@@ -8,14 +8,9 @@
 }
 .home_text {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items:center;
-  gap:5em;
+  display: block;
   position: relative;
-  width:500px;
-
+  max-width:500px;
   color:white;
 }
 
@@ -46,7 +41,7 @@
   text-transform: uppercase;
   font-size: 50px;
   margin: 10px;
-  /* line-height: 87px; */
+  line-height: 87px;
   letter-spacing: 2px;
 }
 .home_text a{
@@ -61,10 +56,10 @@
   position:relative;
 }
 
-.home_text a:hover{
+/* .home_text a:hover{
   background-color:transparent !important;
   border: 1px solid black !important;
-}
+} */
 .home_text  .title {
   display: block;
   float: left;
