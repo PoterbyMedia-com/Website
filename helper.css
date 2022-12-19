@@ -45,21 +45,20 @@
   letter-spacing: 2px;
 }
 .home_text a{
-  background-color:black;
+  background:black;
   color:white;
   padding:10px;
   border-radius:30px;
   margin:20px;
   display:inline-block;
   cursor:pointer;
-  padding:15px 15px;
+  padding:10px 15px;
   position:relative;
 }
 
-/* .home_text a:hover{
-  background-color:transparent !important;
-  border: 1px solid black !important;
-} */
+.home_text a:hover{
+  background:rgba(0,0,0,0.6);
+}
 .home_text  .title {
   display: block;
   float: left;
