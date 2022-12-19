@@ -13,9 +13,9 @@
   justify-content: space-between;
   align-items:center;
   gap:5em;
-  /* position: relative; */
-  width:50%;
-   /* background-color: #e55643; */
+  position: relative;
+  width:500px;
+
   color:white;
 }
 
@@ -69,7 +69,7 @@
   display: block;
   float: left;
   position: relative;
-  /* width:500px; */
+  width:500px;
   text-align: center;
   display:flex;
   justify-content: center;
@@ -79,8 +79,8 @@
   display: block;
   /* float: left; */
   /* text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px; */
-  /* min-width: 10px; */
-  /* min-height: 10px; */
+  min-width: 10px;
+  min-height: 10px;
   position: relative;
   text-align: center;
 }

@@ -94,8 +94,8 @@ flex-direction: row;
 
 
 .home_text h1{
-  font-size: 65px;
-  /* line-height: 100px; */
+  font-size: 75px;
+  line-height: 100px;
   font-weight: 100;
   font-family: 'DM Serif Display', serif !important;
 }
@@ -767,7 +767,7 @@ footer h3 {
   color: rgba(28, 99, 95, 1);
 }
 footer article {
-  max-width:50% !important;
+  max-width:100px !important;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -783,17 +783,17 @@ footer ul {
 
 footer .page_link,
 footer .social_link > ul {
+  flex: 0.6;
   display: flex !important;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0px;
+  overflow-x: hidden;
 }
 footer .social_link {
-  width:100%;
   text-align: center;
   display: flex !important;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -1035,7 +1035,6 @@ footer .social_link > ul li {
   footer article .social_link{
     width: 100%;
     display: flex;
-    flex-direction: column;
   }
   #proposal img {
     height: 300px;
@@ -1076,7 +1075,7 @@ footer .social_link > ul li {
   }
   .home_text h1{
     font-size: 20px;
-    line-height: 50px;
+    /* line-height: 100px; */
     font-weight: 700;
   }
   .nav .contact_head .but_link a {
@@ -1125,12 +1124,6 @@ footer .social_link > ul li {
   }
 }
 @media (max-width: 375px) {
-  .home_text h1{
-    line-height: 100px !important;
-  }
-  .home_text .title {
-    width:500px;
-  }
   .home_text{
     width:200px;
   }
@@ -1290,7 +1283,7 @@ margin: auto;
   margin-top: -100px;
   margin-bottom: 50px;
 }
-.main3, .main4{
+.main3{
   /* height:1920px; */
   padding: 20px;
   width: 200%;
@@ -1299,12 +1292,6 @@ margin: auto;
   gap: 2rem;
   overflow: hidden;
   margin-left: -268px;
-}
-.main4{
-  width: 300%!important;
-}
-.coverag{
-  width:1600px !important;
 }
 
 .main2 .scrollEdge i{cursor: pointer;}
@@ -1344,10 +1331,6 @@ left: 0;
   /* box-shadow: 0px 0px 25px 0px rgb(223, 217, 217); */
   margin-left: 50px;
 
-}
-.main4 .main2_wrapper .image_wrapper{
-  width:200px;
-  height:150px;
 }
 .p3{
   font-size: 20px;

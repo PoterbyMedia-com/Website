@@ -1,37 +1,3 @@
-const nav=document.querySelector(".nav")
-const scrollHeight=window.pageYOffset
-const navHeight=nav.getBoundingClientRect().height;
-
-console.log(scrollHeight);
-console.log(nav)
-// const li = document.querySelectorAll('.bluey')
-// window.addEventListener("scroll", function(){
-//     const scrollHeight=window.pageYOffset
-//     const navHeight=nav.getBoundingClientRect().height;
-//     console.log(navHeight);
-    
-//     if(scrollHeight>navHeight){
-//         nav.classList.add("fixed-nav")
-//         nav.style.backgroundColor = 'white'
-//         console.log("jerl")
-//         li.forEach((li)=>{
-//           li.style.color = 'white'
-//         })
-        
-//     }
-//     else{
-//         nav.classList.remove("fixed-nav")
-//         nav.style.backgroundColor = 'transparent'
-//         li.forEach((li)=>{
-//           li.style.color = 'rgb(209, 209, 9)'
-//           console.log(li)
-//         })
-        
-        
-//     }
-    
-// })
-
 const menuIcon = document.querySelector(".menu-icon");
 const lines = document.querySelectorAll(".menu-icon div");
 console.log(menuIcon);
@@ -186,21 +152,12 @@ function reveal() {
 
 // const servicesModule = JSON.parse(localStorage.getItem('products'));
 let carouselCont =document.querySelector('.coverage .main3')
-let carouselContainer =document.querySelector('.coverag .main3')
-
 let all = [
     "img/recent.png",
     "img/pencil.png",
     "img/Rectangle 9.png",
     "img/Rectangle 8.png"
 ];
-let over = [
-    "img/google-cloud-partner 1.png",
-    "img/google-premier-partner-2022 1.png",
-    "img/meta-business-partners 1.png",
-    "img/meta-certified-company-2 1.png",
-    "img/microsoft-advertising-partner 1.png"
-]
 
 function render(refresh=false, animClass='slideInRight'){
     if(refresh)carouselCont.innerHTML="";
@@ -214,20 +171,6 @@ function render(refresh=false, animClass='slideInRight'){
 
 }
 
-function slider(refresh=false, animClass='slideInRight'){
-    if(refresh)carouselContainer.innerHTML="";
-    over.map(items=>{
-    return  carouselContainer.innerHTML +=`<div class="main2_wrapper ${animClass}">
-        <div class="image_wrapper"><img class="image" src="${items}" alt=""></div>
-        
-        </div>`
-    }).join('');
-    console.log(items.image)
-
-}
-
-
-let slideShows = setInterval(moveLefts,2000);
 
 let slideShow = setInterval(moveLeft,2000);
 
@@ -244,20 +187,6 @@ function moveRight(){
     render(true,'slideInLeft');
 }
 
-
-
-function moveLefts(){
-    let off = over.shift();
-    over.push(off)
-    slider(true);
-}
-slider();
-
-function moveRights(){
-    let off = over.pop();
-    over.unshift(off)
-    slider(true,'slideInLeft');
-}
 document.querySelector('.main2 .left').onmouseover = pauseSlideshow;
 document.querySelector('.main2 .left').onmouseout = playSlideshow;
 
@@ -299,4 +228,5 @@ function topFunction() {
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");
+
 
