@@ -7,7 +7,7 @@
   
 }
 *{
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -141,8 +141,6 @@ flex-direction: row;
   width: 100%;
   margin: auto;
   text-align: center;
-  overflow-x: hidden;
-
 }
  .mobile_header{
   display: none;
@@ -197,8 +195,6 @@ flex-direction: row;
   /* background-color: #d9dd20; */
   padding-bottom: -20px;
   margin-top: -100px;
-  overflow-x: hidden;
-
 }
 
 .bg-container .move{
@@ -312,8 +308,6 @@ section {
   overflow: auto;
   width: 100%;
   padding: 20px;
-  overflow-x: hidden;
-
 }
 #partner > div{
   width: 200px;
@@ -336,8 +330,6 @@ section {
   flex-wrap: wrap;
   padding-left: 100px;
   padding-right:130px;
-  overflow-x: hidden;
-
 }
 #proposal .proposal_mobile_link {
   display: none;
@@ -767,13 +759,10 @@ footer h3 {
   color: rgba(28, 99, 95, 1);
 }
 footer article {
-  max-width:100px !important;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
 }
 footer ul {
   text-decoration: none;
@@ -784,18 +773,17 @@ footer ul {
 footer .page_link,
 footer .social_link > ul {
   flex: 0.6;
-  display: flex !important;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0px;
-  overflow-x: hidden;
 }
 footer .social_link {
   text-align: center;
   display: flex !important;
   justify-content: center;
-  align-items: center;
+  width:500px;
 }
 footer .social_link > ul li {
   margin: 10px;
