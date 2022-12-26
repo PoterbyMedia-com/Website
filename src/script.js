@@ -13,6 +13,8 @@ var image_url = [
     // 'back7.jpg',
 ];
 
+
+
 function checkbgcolor(count) {
     if (count === 0) {
         navitem.forEach(function (a) { return a.style.color = "rgb(116,79,99)"; });
