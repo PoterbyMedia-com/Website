@@ -228,6 +228,7 @@ body {
 
 
 .partner-tab{
+  margin:50px 0;
   display: flex;
   align-items: center;
   padding: 20px 30px;
@@ -236,6 +237,13 @@ body {
 
 .partner-tab .note{
   flex: 1;
+}
+
+.partner-tab .head{
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .partner-tab .img-con {
@@ -261,10 +269,92 @@ body {
   transition: all 0.4s linear;
   cursor: pointer; 
 }
+
+.brand_link {
+  margin-top: 15px;
+}
+
+.brand_link a{
+
+background-color: #000;
+padding: 10px 20px;
+color: #fff;
+border-radius: 20px;
+}
 .partner-tab img:hover {
   transform: scale(1.1);
 }
 
+.what_we_do{
+  margin-top: 60px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Whatwedotext{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Inter' sans-serif;
+}
+.note_on_what_we_do{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Whatwedo-boxes{
+margin: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px ;
+}
+
+.Whatwedo-boxes p{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.eye_catching{
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  background-color: #F4F4F4;
+}
+
+.eye_catching .note{
+  flex: 1;
+  padding: 40px 0 40px 40px;
+}
+.eye_catching .note .head{
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px ;
+
+}
+.eye_catching .note .text{
+  margin-bottom: 30px ;
+
+}
+.eye_catching .picz{
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  
+}
+.eye_catching .picz img{
+ width: 600px;
+
+}
 
 @media screen and (max-width: 1050px) {
     .navbar {
@@ -322,7 +412,7 @@ body {
       }
 
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 865px) {
 
   .nav-links {
     display: flex;
@@ -367,6 +457,25 @@ body {
     width: 100%;
     height: 200px;
     border-radius:20px;
+  }
+  .Whatwedo-boxes{
+    margin: 20px 0;
+  }
+  .eye_catching{
+    flex-direction: column;
+  }
+  .eye_catching .note {
+    padding:70px 0 30px  30px;
+   flex: none;
+  }
+  .eye_catching .picz {
+    margin-top: 50px;
+   flex: none;
+   width: 100%;
+  }
+  .eye_catching .picz img{
+   width: 100%;
+   height: 350px;
   }
 
 }
