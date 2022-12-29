@@ -356,6 +356,52 @@ margin: 20px;
 
 }
 
+.client{
+  width: 100%;
+  margin:50px 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marquee-content {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 0 30pxs;
+}
+.marquee-content::-webkit-scrollbar{
+  display: none;
+}
+
+.marquee-content  img{
+  overflow-x: scroll;
+  margin:  20px 20px;
+height: 100px;
+width: 100px;
+object-fit: contain;
+
+}
+
+.about{
+  margin: 70px 0;
+  width: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+background-color: #EFEAE2;
+padding: 90px 70px;
+}
+
+.about p{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1050px) {
     .navbar {
         padding: 10px;
@@ -476,6 +522,13 @@ margin: 20px;
   .eye_catching .picz img{
    width: 100%;
    height: 350px;
+  }
+
+  .about {
+   padding:50px  20px;
+  }
+  .about p{
+    font-size: 20px;
   }
 
 }
