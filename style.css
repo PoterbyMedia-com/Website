@@ -248,10 +248,12 @@ section {
   padding: 0px;
   margin: 0px;
 }
+
 .partner-tab > div img {
   width: 100%;
   margin: 5px;
 }
+
 .partner-tab .img {
   width: 500px;
   height: 300px;
@@ -263,49 +265,45 @@ section {
 }
 
 .what_we_do {
-  width: 80%;
   margin: auto;
   padding: 10px 20px;
   position: relative;
 }
+
+
 .what_we_do .Whatwedotext {
   font-size: 48px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: 0em;
-  font-family: "Lexend", sans-serif;
   text-align: center;
 }
-
-.what_we_do .Whatwedo-topic {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 60px;
-  letter-spacing: 0em;
-  font-family: "Inter-Bold", sans-serif;
-  text-align: center;
-}
-
-.what_we_do .Whatwedo-boxes p{
-  font-size: 17px;
-}
-
 
 .what_we_do .note_on_what_we_do {
-  margin: auto;
+  background: yellowgreen !important;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  background: rgb(229, 229, 229);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
 }
 
-.what_we_do .Whatwedo-boxes {
-  width: 370px;
+.note_on_what_we_do{
+  background: yellowgreen !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.Whatwedo-boxes {
+  width: 400px;
   background: rgba(0, 0, 0, 1);
   border-radius: 15px;
-  height: 370px;
+  height: 400px;
   margin: 10px;
   color: white;
   display: flex;
@@ -322,6 +320,23 @@ section {
   width: 100px;
   height: 100px;
 }
+
+
+
+.what_we_do .Whatwedo-topic {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  font-family: "Inter-Bold", sans-serif;
+  text-align: center;
+}
+
+.what_we_do .Whatwedo-boxes p{
+  font-size: 17px;
+}
+
+
 
 .eye_catching {
   display: flex;
